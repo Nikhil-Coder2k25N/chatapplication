@@ -1,6 +1,6 @@
 import 'package:chatapplication/features/auth/presentation/screens/login_screen.dart';
-import 'package:chatapplication/features/chat/presentation/screens/chat_list_screen.dart';
 import 'package:chatapplication/features/chat/presentation/screens/chat_screen.dart';
+import 'package:chatapplication/features/chat/presentation/screens/main_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -17,7 +17,7 @@ class AppRouter {
       final isLoggingIn = state.matchedLocation == '/login';
 
       if (!isLoggedIn && !isLoggingIn) return '/login';
-      if (isLoggedIn && isLoggingIn) return '/chatList';
+      if (isLoggedIn && isLoggingIn) return '/main';
       return null;
     },
     routes: [
@@ -27,9 +27,9 @@ class AppRouter {
         builder: (_, __) => const LoginScreen(),
       ),
       GoRoute(
-        path: '/chatList',
-        name: 'chatList',
-        builder: (_, __) => const ChatListScreen(),
+        path: '/main',
+        name: 'main',
+        builder: (_, __) => const MainScreen(),
       ),
       GoRoute(
         path: '/chat/:chatId',

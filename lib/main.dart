@@ -1,4 +1,6 @@
 import 'package:chatapplication/app_router.dart';
+import 'package:chatapplication/core/providers/theme_provider.dart';
+import 'package:chatapplication/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -12,19 +14,19 @@ void main() async {
   runApp(const ProviderScope(child: ChatApp()));
 }
 
-class ChatApp extends StatelessWidget {
+class ChatApp extends ConsumerWidget {
   const ChatApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final themeMode = ref.watch(themeModeProvider);
+
     return MaterialApp.router(
       title: 'Secure Chat',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        primaryColor: const Color(0xFF6C63FF),
-        scaffoldBackgroundColor: const Color(0xFF121212),
-        appBarTheme: const AppBarTheme(elevation: 0, centerTitle: false),
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: themeMode,
       routerConfig: AppRouter.router,
     );
   }
