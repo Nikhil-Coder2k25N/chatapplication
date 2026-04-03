@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "700074478728",
+    "firebase_url": "https://chatapplication-ecff3-default-rtdb.firebaseio.com",
+    "project_id": "chatapplication-ecff3",
+    "storage_bucket": "chatapplication-ecff3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700074478728:android:4003f27311affb7f15a33d",
+        "android_client_info": {
+          "package_name": "chatapplication.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700074478728-p0btgqrnff1uu14eagejvs158j2o9d0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5LmTHF5ROw6_3kzeUT0JNIKIBiQDKmQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700074478728-p0btgqrnff1uu14eagejvs158j2o9d0j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "700074478728-0ojn3s7bnlons5jq6t8a3tq5up53gj6r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "chatapplication.com.chatapplication"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700074478728:android:a43a46453bc8f2c715a33d",
+        "android_client_info": {
+          "package_name": "chatapplication.com.chatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700074478728-p0btgqrnff1uu14eagejvs158j2o9d0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5LmTHF5ROw6_3kzeUT0JNIKIBiQDKmQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700074478728-p0btgqrnff1uu14eagejvs158j2o9d0j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "700074478728-0ojn3s7bnlons5jq6t8a3tq5up53gj6r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "chatapplication.com.chatapplication"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
