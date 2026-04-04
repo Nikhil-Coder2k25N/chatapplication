@@ -1,6 +1,6 @@
 # chatapplication
 
-A new Flutter project.
+A new Flutter project Chat Application.
 
 ## Getting Started
 
