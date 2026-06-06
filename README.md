@@ -1,4 +1,4 @@
-# chatapplication
+# chatapplication.
 
 A new Flutter project Chat Application with using Firebase.
 
